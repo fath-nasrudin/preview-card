@@ -14,9 +14,6 @@ html {
 }
 
 /* page/layout */
-body {
-  color: hsl(0, 0%, 95%);
-}
 body > .container {
   min-height: 100vh;
   padding: 16px;
