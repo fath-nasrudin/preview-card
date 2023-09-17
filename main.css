@@ -1,1 +1,101 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/*reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* base */
+html {
+  font-size: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.6;
+}
+
+/* page/layout */
+body {
+  color: hsl(0, 0%, 95%);
+}
+body > .container {
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Components */
+/* Card Component */
+.card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.card .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+}
+.card .content .header {
+  font-size: 3rem;
+  line-height: 1;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+.card .content .body {
+  flex: 1;
+}
+
+/* Preview Card  Component*/
+.preview-card {
+  max-width: 800px;
+  border-radius: 16px;
+  overflow: hidden;
+  color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+}
+.preview-card > :nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+}
+.preview-card > :nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+.preview-card > :nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+.preview-card .card .content .header {
+  color: hsl(0, 0%, 95%);
+}
+.preview-card .card .content .body {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media (min-width: 575px) {
+  .preview-card {
+    flex-direction: row;
+  }
+}
+
+/* Button Component */
+.btn {
+  padding: 8px 32px;
+  border-radius: 32px;
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  font: inherit;
+  color: inherit;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active, .btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}/*# sourceMappingURL=main.css.map */
